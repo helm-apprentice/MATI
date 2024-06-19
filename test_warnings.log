@@ -1,0 +1,23 @@
+WARNING: You are using tensorboardX instead sis you have a too old pytorch version.
+Traceback (most recent call last):
+  File "/home/helm/tracker/ProContEXT-main/tracking/run_test.py", line 99, in <module>
+    main()
+  File "/home/helm/tracker/ProContEXT-main/tracking/run_test.py", line 94, in main
+    run_image_sequence(args.tracker_name, args.tracker_param, args.runid, args.dataset_name, args.imageSequencePath, seq_name, args.debug,
+  File "/home/helm/tracker/ProContEXT-main/tracking/run_test.py", line 54, in run_image_sequence
+    trackers = [Tracker(tracker_name, tracker_param, dataset_name, run_id)]
+  File "/home/helm/tracker/ProContEXT-main/lib/test/evaluation/tracker.py", line 58, in __init__
+    tracker_module = importlib.import_module('lib.test.tracker.{}'.format(self.name))
+  File "/home/helm/lk/conda/anaconda3/envs/ostrack/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/helm/tracker/ProContEXT-main/lib/test/tracker/procontext.py", line 5, in <module>
+    from lib.models.procontext.visualize import Visualize_attention, Visualize_attention1
+  File "/home/helm/tracker/ProContEXT-main/lib/models/procontext/visualize.py", line 9, in <module>
+    import ipywidgets as widgets
+ModuleNotFoundError: No module named 'ipywidgets'

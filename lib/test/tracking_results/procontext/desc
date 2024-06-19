@@ -1,0 +1,116 @@
+cmc_gtot: 重新训练，数据集混杂
+cmc_gtot_001: 重新训练，数据集为验证集    0.64  0.54  128.81
+cmc_gtot_fine: 在单模基础上训练,解冻层为3，4，7，8，11，12；整体排布为CMC1+(CEB+CMC)
+cmc_gtot_fine_002: 双模验证   0.69  0.57  131.85
+cmc_gtot_fine_001: 单模验证   0.73  0.67  154.4 -
+cmc_gtot_fine1: 单模基础，解冻层为4，8，12；整体排布为CMC1+（CEB+CMC）
+               160: 0.69  0.63  118.56
+               170: 0.71  0.63  120.35
+               175: 0.72  0.64  120.98 
+cmc_gtot_fine1_180: 0.72  0.64  109.62 *
+cmc_gtot_fine1_190: 0.70  0.62  117.41
+cmc_gtot_fine1_200: 0.70  0.61  109.93
+cmc_gtot_fine2: 单模基础，双模验证，只有头部CMC1
+cmc_gtot_fine2_175: epoch175   0.74  0.67  127.78
+cmc_gtot_fine2_185: epoch185   0.71  0.65  128.22
+cmc_gtot_fine2_200: epoch200   0.76  0.68  127.30 *
+cmc_gtot_fine3: 只有网络头部CMC
+cmc_gtot_fine3_000: 单模验证   0.73  0.67  152.62 -
+双模验证
+cmc_gtot_fine3_155: epoch155   0.76  0.70  128.54 *
+cmc_gtot_fine3_160: epoch160   0.35  0.26  116.58
+cmc_gtot_fine3_165: epoch165   0.66  0.57  128.29
+cmc_gtot_fine3_170:            0.70  0.62  121.31
+cmc_gtot_fine3_175: epoch175   0.78  0.71  128.54 *
+cmc_gtot_fine3_180:            0.75  0.68  120.10
+cmc_gtot_fine3_185: epoch185   0.76  0.67  128.60
+cmc_gtot_fine3_190: epoch190   0.74  0.64  128.74
+cmc_gtot_fine3_195: epoch195   0.66  0.56  125.75
+cmc_gtot_fine3_200: epoch200   0.65  0.57  127.12
+cmc_gtot_fine4: 头部+中间CMC
+epoch160: 0.46  0.31  113.63
+epoch180: 0.66  0.59  121.28
+epoch190: 0.71  0.64  113.68
+epoch199: 0.69  0.62  114.66
+epoch200: 0.75  0.68  117.87 *
+epoch218: 0.46  0.29  112.86
+epoch220: 0.71  0.63  115.75
+
+SiamCSR: 0.76  0.67
+
+cmc_gtot_fine5: 头部+中间CEB+CMC，验证集为GTOT和RGBT234的混合
+epoch155: 0.66  0.58  112.02
+epoch160: 0.55  0.41  109.95
+epoch165: 0.55  0.41  111.32
+epoch170: 0.64  0.48  108.93
+epoch175: 0.56  0.39  108.46
+epoch180: 0.60  0.50  110.19
+epoch185: 0.64  0.55  106.91
+epoch200: 0.67  0.57  119.38
+epoch210: 0.68  0.56  113.25
+epoch220: 0.72  0.62  107.74
+epoch230: 0.73  0.63  109.04 *
+epoch240: 0.72  0.62  109.98
+epoch250: 0.71  0.62  114.05
+
+(mpr <= 10, msr >= 0.75)
+cmc3_999: 跟踪plane1dark全序列 双模 CMC1+CMC
+999: 0.0167   0.74   0.60
+998: 0.017    0.74   0.61
+997: 0.0151   mpr 0.76  msr  0.62
+996: 0.0172   0.77   0.62  *
+995: 0.0135   mpr 0.75  msr  0.58
+994: 0.0201   0.74   0.62
+993: 0.017    0.75   0.60
+992: 0.0191   0.75   0.61
+
+plane1dark
+cmc3_991: 单模跟踪
+False                 1             0.0312      0.69      0.44
+cmc3_990: 只有CMC1头
+True                  0             0.0148  mpr 0.75  msr  0.58              
+cmc3_989: 只有CMC1头
+Tracking: True, miss: 0, max_ratio: 0.0151  MPR 0.75  MSR 0.57
+cmc3_985: cmc+cmc   
+Tracking: True, miss: 0, max_ratio: 0.0093  mpr 0.92  msr  0.84
+cmc3_984: cmc
+Tracking: True, miss: 0, max_ratio: 0.0092  mpr 0.91  msr  0.86
+cmc3_983: 单模
+Tracking: True, miss: 0, max_ratio: 0.0174      0.70       0.46
+cmc3_982: cmc+cmc
+Tracking: True, miss: 0, max_ratio: 0.0134      0.92       0.85
+cmc3_981: cmc
+Tracking: True, miss: 0, max_ratio: 0.0111      0.92       0.87
+cmc3_980: cmc+cmc
+Tracking: True, miss: 0, max_ratio: 0.0099      0.93       0.84
+cmm3_979: cmc
+Tracking: True, miss: 1, max_ratio: 0.0288      0.92       0.87
+cmc3_978: cmc
+Tracking: True, miss: 0, max_ratio: 0.0108      0.92       0.87
+cmc3_977: cmc+cmc
+Tracking: True, miss: 0, max_ratio: 0.0129      0.92       0.85
+cmc3_976: cmc+cmc                               
+Tracking: True, miss: 0, max_ratio: 0.0107      0.92       0.85
+cmc3_975: cmc
+Tracking: True, miss: 0, max_ratio: 0.0107      0.92       0.87
+
+
+plane2       (mpr <= 10, msr >= 0.75)
+cmc3_988: 单模跟踪  
+Tracking: True, miss: 0, max_ratio: 0.0046   
+cmc3_987: 只有CMC1头
+Tracking: True, miss: 0, max_ratio: 0.0042   MPR 0.98  MSR 0.89
+cmc3_986: CMC1+CMC0
+Tracking: True, miss: 1, max_ratio: 0.0039   MPR 0.99  MSR 0.89
+cmc3_974: 单模
+Tracking: True, miss: 0, max_ratio: 0.0034       0.99      0.98
+cmc3_973: cmc
+Tracking: True, miss: 0, max_ratio: 0.0059       0.99      0.99
+cmc3_972: cmc+cmc
+Tracking: True, miss: 0, max_ratio: 0.0059       0.99      0.99
+cmc3_971: cmc
+Tracking: True, miss: 0, max_ratio: 0.0033       0.99      0.99
+
+
+
+
